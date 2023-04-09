@@ -1,0 +1,49 @@
+.artist-info {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    flex-direction: row-reverse; /* добавлено свойство */
+  }
+  
+  .artist-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .artist-details {
+    margin-right: 50px; /* изменено свойство */
+  }
+  
+  .artist-name {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .artist-birthyear {
+    font-size: 24px;
+    color: #999;
+  }
+  
+  .artist-bio {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  

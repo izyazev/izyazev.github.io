@@ -16,11 +16,26 @@
   }
   
   header h1 {
+    color: #fff;
     margin: 0;
     font-size: 32px;
     font-weight: bold;
     float: left;
     line-height: 40px;
+  }
+
+  .page-header {
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .page-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
   }
   
   nav {
@@ -89,8 +104,8 @@
   
   .artist-avatar {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     margin-bottom: 20px;
   }
@@ -300,4 +315,52 @@
     font-weight: bold;
     cursor: pointer;
   }
-  
+/* конец основного кода страницы */
+
+.gallery {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px 0;
+}
+.gallery-images {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-images img.active {
+  opacity: 1;
+}
+.gallery-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.gallery-button-prev {
+  left: 0;
+}
+.gallery-button-next {
+  right: 0;
+}
+
+
