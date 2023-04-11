@@ -70,3 +70,6 @@ nextButton.addEventListener('click', () => {
 });
 
 showImage(activeImageIndex);
+
+
+
