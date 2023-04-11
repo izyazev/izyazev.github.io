@@ -137,29 +137,41 @@
     margin-bottom: 30px;
   }
   
-  .smedia-list {
+  .social-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
   }
   
-  .smedia-list li {
+  .social-buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
     margin: 0 10px;
-    background-color: #dba678;
     border-radius: 50%;
-    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s ease-in-out;
   }
   
-  .smedia-list img {
-    width: 30px;
-    height: 30px;
+  .social-buttons a:hover {
+    background-color: #444;
+    transform: scale(1.2);
   }
+  
+  .social-buttons a i {
+    font-size: 24px;
+  }
+  
+  
+  
   
   .my-works {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 35px;
   }
   
